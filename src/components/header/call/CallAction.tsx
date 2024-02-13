@@ -1,5 +1,3 @@
-import './call-action.css';
-
 export default function CallAction() {
   return (
     <div className="call-action">

@@ -1,0 +1,121 @@
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 60px;
+  position: relative;
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+    width: 100%;
+}
+
+
+.nav-elements ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.nav-elements ul a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000;
+  transition: all ease-in 0.1s
+}
+.nav-elements ul .call-action {
+    margin-left: auto;
+  }
+
+.nav-elements ul .call-action a{
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 800;
+    color: #DD9933;
+    transition: all ease-in 0.1s
+  }
+  .call-action a:hover{
+      color: #BC7D20;
+    }
+.call-action-text{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7F888F
+}
+
+.nav-elements ul a.active {
+    color: #BC7D20;
+}
+.nav-elements ul a:hover {
+    color: #BC7D20;
+}
+
+@media (max-width: 1100px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}
+.home-page-logo {
+    height: 80px;
+    width: 200px;
+    background-image: url('../../../assets/LOGO-small.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
