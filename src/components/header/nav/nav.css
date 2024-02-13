@@ -14,7 +14,6 @@
   position: relative;
 }
 
-
 .menu-icon {
   display: none;
 }
@@ -110,6 +109,9 @@
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+  }
+  .nav-elements ul .call-action {
+    margin-left: 0;
   }
 }
 .home-page-logo {
