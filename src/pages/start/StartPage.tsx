@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { animated, useSpring } from '@react-spring/web';
-import videoBg from '../../assets/videoBg.mp4';
+import videoBg from '../../assets/videoBg.webm';
 import LogoCloud from '../../assets/LOGO-big.png';
 import './startPage.css';
 import AnimateWord from './AnimateWord';
