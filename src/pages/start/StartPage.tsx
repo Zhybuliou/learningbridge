@@ -37,7 +37,7 @@ export default function StartPage() {
 
   return (
     <div className="start-page-main">
-      <video src={videoBg} autoPlay loop muted playsInline />
+      <video src={videoBg} autoPlay loop controls muted playsInline />
       <div className="start-page-content">
         <animated.div style={styleLogo}>
           <img src={LogoCloud} alt="Cloud Logo" width="280px" height="100%" />
