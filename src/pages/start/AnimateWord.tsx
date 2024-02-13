@@ -14,7 +14,7 @@ export default function AnimateWord({ word }: { word: string }) {
   };
   const styleWord = useSprings(
     text.length,
-    text.map((t, i) => ({ ...base, delay: 800 + 100 * i }))
+    text.map((_t, i) => ({ ...base, delay: 800 + 100 * i }))
   );
   return (
     <>
