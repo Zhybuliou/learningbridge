@@ -3,7 +3,7 @@ footer {
     width: 100%;
     background-image: url(../../assets/footer-bg-n.png);
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
     background-repeat: repeat-x;
 }
 .footer-wrapper{
@@ -14,16 +14,16 @@ footer {
     justify-content: center;
 }
 .footer-content{
-    min-width: 800px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: end;
         font-family: "Quicksand", sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         color: #000;
     background-image: url(../../assets/footer-bg-p.png);
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
