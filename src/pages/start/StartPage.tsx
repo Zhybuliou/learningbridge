@@ -40,7 +40,7 @@ export default function StartPage() {
       <video src={videoBg} playsInline autoPlay loop muted />
       <div className="start-page-content">
         <animated.div style={styleLogo}>
-          <img src={LogoCloud} alt="Cloud Logo" width="280px" height="100%" />
+          <img src={LogoCloud} alt="Cloud Logo" width="250px" height="100%" />
         </animated.div>
         <animated.div style={styles} className="start-page-link-block">
           <Link to="/freehold">
