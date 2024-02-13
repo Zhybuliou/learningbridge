@@ -1,0 +1,19 @@
+.call-action a{
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 800;
+    color: #DD9933;
+    transition: all ease-in 0.1s
+  }
+  .call-action a:hover{
+      color: #BC7D20;
+    }
+.call-action-text{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7F888F
+}

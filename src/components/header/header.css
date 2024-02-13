@@ -1,0 +1,17 @@
+.content{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-page-logo {
+    height: 80px;
+    width: 200px;
+    background-image: url('../../assets/LOGO-small.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
