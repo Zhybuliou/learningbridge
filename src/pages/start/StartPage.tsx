@@ -3,6 +3,7 @@ import { animated, useSpring } from '@react-spring/web';
 import videoBg from '../../assets/videoBg.mp4';
 import LogoCloud from '../../assets/LOGO-big.png';
 import './startPage.css';
+import AnimateWord from './AnimateWord';
 
 export default function StartPage() {
   const styles = useSpring({
@@ -33,6 +34,7 @@ export default function StartPage() {
     },
     delay: 200,
   });
+
   return (
     <div className="start-page-main">
       <video src={videoBg} autoPlay loop muted />
@@ -43,12 +45,19 @@ export default function StartPage() {
         <animated.div style={styles} className="start-page-link-block">
           <Link to="/freehold">
             <div className="start-page-link shadows-into">
-              Freehold Location
+              <AnimateWord word="Freehold Location" />
             </div>
           </Link>
           <Link to="/freehold">
             <div className="start-page-link shadows-into">
-              East Brunswick Location
+              <div style={{ width: '100%' }}>
+                <div className="big-word">
+                  <AnimateWord word="East Brunswick" />
+                </div>
+                <div className="big-word">
+                  <AnimateWord word="Location" />
+                </div>
+              </div>
             </div>
           </Link>
         </animated.div>
