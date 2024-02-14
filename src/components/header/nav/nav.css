@@ -94,6 +94,7 @@
     background-color: #fef7e5;
     width: 0px;
     min-height: 100vh;
+    height: 100%;
     transition: all 0.3s ease-in;
     overflow: hidden;
   }
