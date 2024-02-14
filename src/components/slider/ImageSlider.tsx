@@ -45,13 +45,16 @@ export default function ImageSlider({ images }: ImageSliderProps) {
         }}
       >
         {images.map(({ url, alt }, index) => (
-          <div key={url} className="img-slider-img">
+          <div
+            key={url}
+            className="img-slider-block"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          >
             <img
               src={url}
               alt={alt}
               aria-hidden={imageIndex !== index}
-              className="img-slider-img"
-              style={{ translate: `${-100 * imageIndex}%` }}
+              //   className="img-slider-img"
             />
           </div>
         ))}
