@@ -7,7 +7,9 @@ import './slider.css';
 export default function SimpleSlider() {
   const settings = {
     swipeToSlide: true,
+    draggable: true,
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     autoplay: true,
