@@ -30,3 +30,11 @@
     z-index: 1;
     transform: rotate(180deg);
 }
+.main-page-slide{
+    height: 400px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+}
