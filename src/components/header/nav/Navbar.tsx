@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link to="/">
+        <Link to="/" className="link-logo">
           <div className="home-page-logo" />
         </Link>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
