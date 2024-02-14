@@ -36,6 +36,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
         Skip Image Slider Controls
       </a>
       <div
+        onTouchMove={showNextImage}
         style={{
           margin: '0 auto',
           maxWidth: '1440px',
@@ -46,7 +47,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
       >
         {images.map(({ url, alt }, index) => (
           <div
-            onTouchMove={showPrevImage}
             key={url}
             className="img-slider-block"
             style={{ translate: `${-100 * imageIndex}%` }}
