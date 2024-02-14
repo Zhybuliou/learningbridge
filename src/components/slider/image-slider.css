@@ -40,6 +40,7 @@ section::after{
   flex-shrink: 0;
   flex-grow: 0;
   background-color: aqua;
+  touch-action: pan-y;
 }
 
 .img-slider-btn {
