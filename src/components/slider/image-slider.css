@@ -97,7 +97,7 @@
   clip: unset;
   text-decoration: none;
   color: black;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 @media not (prefers-reduced-motion) {
