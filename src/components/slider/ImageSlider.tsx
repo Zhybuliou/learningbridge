@@ -46,6 +46,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
       >
         {images.map(({ url, alt }, index) => (
           <div
+            onTouchMove={showPrevImage}
             key={url}
             className="img-slider-block"
             style={{ translate: `${-100 * imageIndex}%` }}

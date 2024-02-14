@@ -41,6 +41,15 @@ section::after{
   flex-grow: 0;
   background-color: aqua;
   touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+    /* line them up horizontally */
+    display: flex;
+
+    /* allow for scrolling */
+    overflow-x: auto;
+  
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
 }
 
 .img-slider-btn {
