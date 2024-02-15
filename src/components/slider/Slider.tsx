@@ -68,7 +68,7 @@ const ImageBG = [
     alt: '7',
     time: 300,
     positionX: 250,
-    positionY: 900,
+    positionY: 550,
     speed: -4,
   },
   {
@@ -76,7 +76,7 @@ const ImageBG = [
     alt: '9',
     time: 900,
     positionX: 100,
-    positionY: 1000,
+    positionY: 800,
     speed: 5,
   },
   {
@@ -92,7 +92,7 @@ const ImageBG = [
     alt: '11',
     time: 580,
     positionX: 40,
-    positionY: 1300,
+    positionY: 300,
     speed: 5,
   },
   {
@@ -159,6 +159,51 @@ export default function SimpleSlider() {
     <div className="slider-container">
       <div className="main-page-slider">
         <Slider {...settings}>
+          <div
+            className="main-page-slide"
+            onMouseMove={(ev) => handleMouseMove(ev)}
+            onMouseLeave={() => setMousePosition({ left: 0, top: 0 })}
+          >
+            {ImageBG.map((el) => {
+              return (
+                <animated.div
+                  className="parallax-image"
+                  style={FunStyle(el.time)}
+                  key={el.alt}
+                >
+                  <img
+                    key={el.alt}
+                    className="parallax-image"
+                    style={{
+                      top: el.positionX,
+                      left: el.positionY,
+                      transform: `translateX(${
+                        (window.innerWidth - MousePosition.top * el.speed) / 100
+                      }px) translateY(${
+                        (window.innerHeight - MousePosition.left * el.speed) /
+                        100
+                      }px)`,
+                    }}
+                    src={el.url}
+                    alt={el.alt}
+                  />
+                </animated.div>
+              );
+            })}
+            <div className="main-page-slide-content">
+              <p>Play, learn and grow</p>
+              <h4>Creative kids world</h4>
+              <Link to="/">
+                Find Out More <FaRegArrowAltCircleRight />
+              </Link>
+            </div>
+            <div
+              className="main-pages-slide-image"
+              style={{
+                backgroundImage: `url(${kidOneImg})`,
+              }}
+            />
+          </div>
           <div
             className="main-page-slide"
             onMouseMove={(ev) => handleMouseMove(ev)}
