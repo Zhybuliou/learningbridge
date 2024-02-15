@@ -13,10 +13,8 @@ import Image4 from '../../assets/elem/4.png';
 import Image5 from '../../assets/elem/5.png';
 import Image6 from '../../assets/elem/6.png';
 import Image7 from '../../assets/elem/7.png';
-import Image8 from '../../assets/elem/8.png';
 import Image9 from '../../assets/elem/9.png';
 import Image10 from '../../assets/elem/10.png';
-import Image11 from '../../assets/elem/11.png';
 import Image12 from '../../assets/elem/12.png';
 
 const ImageBG = [
@@ -27,10 +25,8 @@ const ImageBG = [
   { url: Image5, alt: '5' },
   { url: Image6, alt: '6' },
   { url: Image7, alt: '7' },
-  { url: Image8, alt: '8' },
   { url: Image9, alt: '9' },
   { url: Image10, alt: '10' },
-  { url: Image11, alt: '11' },
   { url: Image12, alt: '12' },
 ];
 
