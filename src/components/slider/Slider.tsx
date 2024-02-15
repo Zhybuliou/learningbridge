@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './slider.css';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
+import kidOneImg from '../../assets/kid-1.png';
 
 export default function SimpleSlider() {
   const settings = {
@@ -33,6 +34,12 @@ export default function SimpleSlider() {
                 Find Out More <FaRegArrowAltCircleRight />
               </Link>
             </div>
+            <div
+              className="main-pages-slide-image"
+              style={{
+                backgroundImage: `url(${kidOneImg})`,
+              }}
+            />
           </div>
           {/* <div className="main-page-slide">
             <h3>2</h3>
