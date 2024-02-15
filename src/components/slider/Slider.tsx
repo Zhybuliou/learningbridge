@@ -100,6 +100,7 @@ export default function SimpleSlider() {
     left: 0,
     top: 0,
   });
+  const [animating, setAnimating] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleMouseMove = (ev: any) => {
     setMousePosition({ left: ev.pageX, top: ev.pageY });
@@ -108,16 +109,21 @@ export default function SimpleSlider() {
     const styles = useSpring({
       from: {
         opacity: 0,
-        y: 50,
+        y: 150,
       },
       to: {
         opacity: 1,
         y: 0,
       },
       config: {
-        duration: 500,
+        duration: 800,
       },
-      delay: num,
+      delay: animating ? 0 : num,
+      reset: animating,
+      onStart: () => {
+        setAnimating(false);
+        console.log('animation finished');
+      },
     });
 
     return styles;
@@ -129,18 +135,18 @@ export default function SimpleSlider() {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 600,
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
     className: 'center',
     adaptiveHeight: true,
-    cssEase: 'linear',
+    // cssEase: 'linear',
   };
   return (
     <div className="slider-container">
       <div className="main-page-slider">
-        <Slider {...settings}>
+        <Slider {...settings} beforeChange={() => setAnimating(true)}>
           <div
             className="main-page-slide"
             onMouseMove={(ev) => handleMouseMove(ev)}
@@ -152,6 +158,7 @@ export default function SimpleSlider() {
                   className="parallax-image"
                   style={FunStyle(el.time)}
                   key={el.alt}
+                  onReset={() => true}
                 >
                   <img
                     key={el.alt}
