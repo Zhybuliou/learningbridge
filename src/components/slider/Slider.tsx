@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './slider.css';
+import { Link } from 'react-router-dom';
+import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 export default function SimpleSlider() {
   const settings = {
@@ -24,23 +26,20 @@ export default function SimpleSlider() {
       <div className="main-page-slider">
         <Slider {...settings}>
           <div className="main-page-slide">
-            <h3>1</h3>
+            <div className="main-page-slide-content">
+              <p>Play, learn and grow</p>
+              <h4>Creative kids world</h4>
+              <Link to="/">
+                Find Out More <FaRegArrowAltCircleRight />
+              </Link>
+            </div>
           </div>
-          <div className="main-page-slide">
+          {/* <div className="main-page-slide">
             <h3>2</h3>
           </div>
           <div className="main-page-slide">
             <h3>3</h3>
-          </div>
-          <div className="main-page-slide">
-            <h3>4</h3>
-          </div>
-          <div className="main-page-slide">
-            <h3>5</h3>
-          </div>
-          <div className="main-page-slide">
-            <h3>6</h3>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>

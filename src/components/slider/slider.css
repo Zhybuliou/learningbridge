@@ -1,8 +1,8 @@
 .main-page-slider{
     margin: 0 auto;
     max-width: 1440px;
-    background-color: aquamarine;
-    height: 400px;
+    background-color: #3EA3DB;
+    height: 500px;
 }
 .slider-container{
     position: relative;
@@ -31,10 +31,46 @@
     transform: rotate(180deg);
 }
 .main-page-slide{
-    height: 400px;
+    height: 500px;
     display: flex !important;
-    justify-content: center;
+}
+.main-page-slide h4{
+    font-size: 100px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    line-height: 100px;
+    letter-spacing: -4px;
+}
+.main-page-slide p{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAAF11;
+}
+.main-page-slide a{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     align-items: center;
-    text-align: center;
-    font-size: 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    background-color: #FAAF11;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.main-page-slide-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 0 20px;
 }
