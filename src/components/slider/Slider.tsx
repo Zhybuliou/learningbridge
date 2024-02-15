@@ -18,8 +18,6 @@ import Image7 from '../../assets/icon-paralax/rev_sliderkin7.png';
 import Image9 from '../../assets/icon-paralax/rev_sliderkin8.png';
 import Image10 from '../../assets/icon-paralax/rev_sliderkin9.png';
 import Image11 from '../../assets/icon-paralax/rev_sliderkin10.png';
-import Image12 from '../../assets/icon-paralax/rev_sliderkin11.png';
-import Image13 from '../../assets/icon-paralax/rev_sliderkin12.png';
 
 const ImageBG = [
   {
@@ -94,22 +92,6 @@ const ImageBG = [
     positionX: 40,
     positionY: 300,
     speed: 5,
-  },
-  {
-    url: Image12,
-    alt: '12',
-    time: 750,
-    positionX: 370,
-    positionY: 500,
-    speed: 5,
-  },
-  {
-    url: Image13,
-    alt: '13',
-    time: 450,
-    positionX: 190,
-    positionY: 150,
-    speed: -5,
   },
 ];
 
