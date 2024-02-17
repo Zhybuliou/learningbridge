@@ -96,6 +96,11 @@
 
 @media (max-width: 1100px) {
     .main-pages-slide-image{
+        width: 40%;
+    }
+}
+@media (max-width: 1006px) {
+    .main-pages-slide-image{
         display: none;
     }
     .parallax-image{
