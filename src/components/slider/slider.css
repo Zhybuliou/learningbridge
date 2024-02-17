@@ -54,24 +54,64 @@
     font-style: normal;
     color: #FAAF11;
 }
-.main-page-slide a{
-    margin-top: 30px;
+.main-page-slide a {
     display: flex;
     justify-content: space-between;
-    width: 200px;
     align-items: center;
+    padding: 0 10px;
     text-decoration: none;
-    font-size: 18px;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
     color: #fff;
     background-color: #FAAF11;
-    padding: 20px 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
 }
+
+.main-page-slide a span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.main-page-slide a:hover {
+    color: black;
+}
+
+.main-page-slide a:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.main-page-slide a span:nth-child(1) {
+    --n: 1;
+}
+
+.main-page-slide a span:nth-child(2) {
+    --n: 2;
+}
+
+.main-page-slide a span:nth-child(3) {
+    --n: 3;
+}
+
+.main-page-slide a span:nth-child(4) {
+    --n: 4;
+}
+
 .main-page-slide-content{
     display: flex;
     flex-direction: column;
@@ -127,4 +167,4 @@
     .main-page-slide{
         height: 350px;
     }
-}  
+} 

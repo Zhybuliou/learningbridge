@@ -184,7 +184,10 @@ export default function SimpleSlider() {
               <p>Play, learn and grow</p>
               <h4>Creative kids world</h4>
               <Link to="/">
-                Find Out More <FaRegArrowAltCircleRight />
+                Find Out More <span />
+                <span />
+                <span />
+                <span /> <FaRegArrowAltCircleRight />
               </Link>
             </div>
             <div
@@ -229,7 +232,10 @@ export default function SimpleSlider() {
               <p>Mindful curriculum</p>
               <h4>Fun & engaging learning</h4>
               <Link to="/">
-                Find Out More <FaRegArrowAltCircleRight />
+                Find Out More <span />
+                <span />
+                <span />
+                <span /> <FaRegArrowAltCircleRight />
               </Link>
             </div>
             <div
