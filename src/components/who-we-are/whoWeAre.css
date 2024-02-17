@@ -1,6 +1,7 @@
 .who{
     margin: 0 auto;
     max-width: 1440px;
+    margin-bottom: 80px;
 }
 .who {
     width: 100%;
@@ -77,6 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    word-wrap: break-word;
 }
 
 @media (max-width: 605px) {
