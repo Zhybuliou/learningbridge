@@ -86,4 +86,7 @@
     .who-content-card {
         height: 185px;
     }
+    .who-content-image img {
+        margin-top: 0px;
+    }
 }
