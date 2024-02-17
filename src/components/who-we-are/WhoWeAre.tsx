@@ -39,8 +39,11 @@ export default function WhoWeAre() {
             <div className="who-content-card">
               <img src={ImageBooks} alt="trophy" width="auto" height="100px" />
               <div className="who-content-content">
-                <h5>Following Curriculum</h5>
-                <p>Our school follows the Common Core Guidelines</p>
+                <h5>Multiple Grades</h5>
+                <p>
+                  With a balance of self-directed play and thoughtful teacher.
+                  We teach from Preschool to First Grade!
+                </p>
               </div>
             </div>
             <div className="who-content-card">
@@ -51,8 +54,11 @@ export default function WhoWeAre() {
                 height="100px"
               />
               <div className="who-content-content">
-                <h5>Following Curriculum</h5>
-                <p>Our school follows the Common Core Guidelines</p>
+                <h5>Extra Activities</h5>
+                <p>
+                  Learning Bridge Academy offers a variety of extra-curricular
+                  activities beginning with Preschool-aged children and on.
+                </p>
               </div>
             </div>
           </div>
