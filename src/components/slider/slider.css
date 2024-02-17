@@ -38,12 +38,12 @@
     justify-content: space-between;
 }
 .main-page-slide h4{
-    font-size: 100px;
+    font-size: 80px;
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #fff;
-    line-height: 100px;
+    line-height: 80px;
     letter-spacing: -4px;
 }
 .main-page-slide p{
@@ -79,12 +79,11 @@
     padding: 0 20px;
 }
 .main-pages-slide-image{
-    width: 400px;
+    width: 45%;
     min-height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    margin-right: 70px;
 }
 .parallax-image{
     position: absolute;

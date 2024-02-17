@@ -7,7 +7,9 @@ import './slider.css';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { useState } from 'react';
-import kidOneImg from '../../assets/kid-1.png';
+import kidOneImg from '../../assets/kid-7.png';
+import kidTwoImg from '../../assets/kid-4.png';
+
 import Image1 from '../../assets/icon-paralax/rev_sliderkin1.png';
 import Image2 from '../../assets/icon-paralax/rev_sliderkin2.png';
 import Image3 from '../../assets/icon-paralax/rev_sliderkin3.png';
@@ -122,7 +124,6 @@ export default function SimpleSlider() {
       reset: animating,
       onStart: () => {
         setAnimating(false);
-        console.log('animation finished');
       },
     });
 
@@ -225,8 +226,8 @@ export default function SimpleSlider() {
               );
             })}
             <div className="main-page-slide-content">
-              <p>Play, learn and grow</p>
-              <h4>Creative kids world</h4>
+              <p>Mindful curriculum</p>
+              <h4>Fun & engaging learning</h4>
               <Link to="/">
                 Find Out More <FaRegArrowAltCircleRight />
               </Link>
@@ -234,7 +235,7 @@ export default function SimpleSlider() {
             <div
               className="main-pages-slide-image"
               style={{
-                backgroundImage: `url(${kidOneImg})`,
+                backgroundImage: `url(${kidTwoImg})`,
               }}
             />
           </div>
