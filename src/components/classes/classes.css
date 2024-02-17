@@ -1,0 +1,52 @@
+.classes-wrapper{
+    background-color: #FAF4EA;
+    position: relative;
+}
+.classes{
+    margin: 0 auto;
+    padding-top: 1px;
+    max-width: 1440px;
+    min-height: 500px;
+}
+.classes-header {
+    text-align: center;
+    line-height: 2.5rem;
+}
+.classes-header h3{
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3EA3DB;
+    letter-spacing: -3px;
+}
+.classes-header p{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAAF11;
+}
+.classes-wrapper::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: url(../../assets/bg-header-top.png) center center repeat-x;
+    z-index: 1;
+}
+.classes-wrapper::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background: url(../../assets/bg-header-top.png) center center repeat-x;
+    z-index: 1;
+    transform: rotate(180deg);
+}
