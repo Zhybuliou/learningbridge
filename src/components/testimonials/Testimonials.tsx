@@ -54,6 +54,20 @@ export default function Testimonials() {
               <h6>Parents</h6>
             </div>
           </div>
+          <div>
+            <div
+              className="quotation-card"
+              style={{ backgroundImage: `url(${ImageQuotation})` }}
+            >
+              <p>
+                My child loves learning, can think critically, and has an
+                amazing educational base. Both kids are comfortable speaking in
+                public and they have great memories with wonderful role models.
+              </p>
+              <h3>Claire Stone</h3>
+              <h6>Parents</h6>
+            </div>
+          </div>
         </Slider>
       </div>
     </section>
