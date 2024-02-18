@@ -4,6 +4,7 @@ import './home-page.css';
 import SimpleSlider from '../../components/slider/Slider';
 import WhoWeAre from '../../components/who-we-are/WhoWeAre';
 import Classes from '../../components/classes/Classes';
+import Teachers from '../../components/teachers/Teachers';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
         <SimpleSlider />
         <WhoWeAre />
         <Classes />
+        <Teachers />
       </main>
       <Footer />
     </div>

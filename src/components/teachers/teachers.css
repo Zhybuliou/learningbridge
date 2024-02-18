@@ -1,0 +1,93 @@
+.teachers {
+    margin: 0 auto;
+    padding-top: 1px;
+    max-width: 1440px;
+    padding-bottom: 1px;
+}
+.teachers-header {
+    text-align: center;
+    line-height: 2.5rem;
+}
+.teachers-header h3{
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3EA3DB;
+    letter-spacing: -3px;
+}
+.teachers-header p{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAAF11;
+}
+.teachers-cards{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.teachers-card{
+    margin: 10px;
+    height: 340px;
+    width: 285px;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+.teachers-card-avatar{
+    position: relative;
+    height: 255px;
+    width: 255px;
+    background-size: contain;
+    border-radius: 50%;
+}
+.teachers-card-avatar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(23, 162, 184, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+.teachers-card-avatar-links:hover{
+    opacity: 1;
+}
+.teachers-card-avatar-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: 15px;
+   width: 50px;
+   height: 50px;
+   color: #fff;
+   font-size: 28px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   transition: all 0.5s ease 0s;
+}
+.teachers-card-avatar-links a:hover {
+  background-color: #fff;
+  color: #66717A;
+}
+.teachers-card h5 {
+    font-family: "Quicksand", sans-serif;
+    color: #3EA3DB;
+    font-size: 28px;
+}
+.teachers-card p {
+    font-family: "Quicksand", sans-serif;
+    color: #66717A;
+    font-size: 16px;
+}
