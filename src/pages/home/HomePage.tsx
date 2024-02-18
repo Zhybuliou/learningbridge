@@ -6,6 +6,7 @@ import WhoWeAre from '../../components/who-we-are/WhoWeAre';
 import Classes from '../../components/classes/Classes';
 import Teachers from '../../components/teachers/Teachers';
 import Testimonials from '../../components/testimonials/Testimonials';
+import OurActivities from '../../components/gallery/OurActivities';
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Classes />
         <Teachers />
         <Testimonials />
+        <OurActivities />
       </main>
       <Footer />
     </div>
