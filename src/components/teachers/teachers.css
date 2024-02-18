@@ -91,3 +91,8 @@
     color: #66717A;
     font-size: 16px;
 }
+@media (max-width: 885px) {
+    .teachers-header h3{
+        font-size: 40px;
+    }
+}
