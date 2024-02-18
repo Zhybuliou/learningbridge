@@ -1,0 +1,107 @@
+.testimonials-wrapper{
+  position: relative;
+  background-color: #acf1a9;
+  min-height: 400px;
+}
+.testimonials-wrapper::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: url(../../assets/bg-header-top.png) center center repeat-x;
+    z-index: 1;
+}
+.testimonials-wrapper::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background: url(../../assets/bg-header-top.png) center center repeat-x;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+.testimonials {
+    margin: 0 auto;
+    padding-top: 1px;
+    max-width: 1440px;
+    padding-bottom: 1px;
+}
+.testimonials-header {
+    text-align: center;
+    line-height: 2.5rem;
+}
+.testimonials-header h3{
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3EA3DB;
+    letter-spacing: -3px;
+}
+.testimonials-header p{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FAAF11;
+}
+.quotation-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 30px;
+    margin: 20px auto;
+    width: 500px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.quotation-card p {
+    font-family: "Quicksand", sans-serif;
+    color: #66717A;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.quotation-card h3 {
+    font-family: "Quicksand", sans-serif;
+    color: #3EA3DB;
+    font-size: 18px;
+}
+.quotation-card h6 {
+    font-family: "Quicksand", sans-serif;
+    color: #66717A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 550px) {
+    .testimonials-header h3{
+        font-size: 30px;
+    }
+    .quotation-card{
+        width: 320px;
+        height: 250px;
+    }
+    .quotation-card p {
+        font-family: "Quicksand", sans-serif;
+        color: #66717A;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .quotation-card h3 {
+        font-size: 14px;
+    }
+    .quotation-card h6 {
+        font-size: 10px;
+    }
+}

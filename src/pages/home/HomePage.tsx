@@ -5,6 +5,7 @@ import SimpleSlider from '../../components/slider/Slider';
 import WhoWeAre from '../../components/who-we-are/WhoWeAre';
 import Classes from '../../components/classes/Classes';
 import Teachers from '../../components/teachers/Teachers';
+import Testimonials from '../../components/testimonials/Testimonials';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <WhoWeAre />
         <Classes />
         <Teachers />
+        <Testimonials />
       </main>
       <Footer />
     </div>
