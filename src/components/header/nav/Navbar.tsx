@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="home-page-logo" />
         </Link>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
-          <ul>
+          <ul onClick={() => setShowNavbar(false)} aria-hidden="true">
             <li>
               <NavLink to="/freehold">Home</NavLink>
             </li>
