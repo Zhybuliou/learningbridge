@@ -1,3 +1,5 @@
+import PageTitle from '../../components/page-title/PageTitle';
+
 export default function VirtualPage() {
-  return <div>VirtualPage</div>;
+  return <PageTitle titleName="Virtual Learning" />;
 }

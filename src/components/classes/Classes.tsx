@@ -120,7 +120,7 @@ export default function Classes() {
             Our curriculum is designed to help your child learn & enhance life
             skills with specially crafted multi-level programs
           </p>
-          <Link to="/">
+          <Link to="/freehold/curriculum">
             Find Out More <span />
             <span />
             <span />

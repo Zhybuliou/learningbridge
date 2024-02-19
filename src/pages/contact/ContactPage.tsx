@@ -1,3 +1,5 @@
+import PageTitle from '../../components/page-title/PageTitle';
+
 export default function ContactPage() {
-  return <div>ContactPage</div>;
+  return <PageTitle titleName="Contact Us" />;
 }
