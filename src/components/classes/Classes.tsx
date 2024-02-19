@@ -1,7 +1,9 @@
 import './classes.css';
 import { Link } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
-import ImageClasses from '../../assets/classes/class-1.jpg';
+import ImageClasses from '../../assets/classes/class-4.webp';
+import ImageClasses5 from '../../assets/classes/class-5.webp';
+import ImageClasses6 from '../../assets/classes/class-6.png';
 
 export default function Classes() {
   return (
@@ -49,7 +51,7 @@ export default function Classes() {
             <div
               className="classes-card-image"
               style={{
-                backgroundImage: `url(${ImageClasses})`,
+                backgroundImage: `url(${ImageClasses5})`,
               }}
             />
             <div className="classes-card-description">
@@ -82,7 +84,7 @@ export default function Classes() {
             <div
               className="classes-card-image"
               style={{
-                backgroundImage: `url(${ImageClasses})`,
+                backgroundImage: `url(${ImageClasses6})`,
               }}
             />
             <div className="classes-card-description">
