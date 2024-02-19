@@ -7,6 +7,9 @@ import ImageG3 from '../../assets/gallery/g-3.jpeg';
 import ImageG4 from '../../assets/gallery/g-4.jpg';
 import ImageG5 from '../../assets/gallery/g-5.jpg';
 import ImageG6 from '../../assets/gallery/g-6.jpg';
+import ImageG7 from '../../assets/gallery/g-7.jpg';
+import ImageG8 from '../../assets/gallery/g-8.jpg';
+import ImageG9 from '../../assets/gallery/g-9.jpg';
 
 const photos = [
   {
@@ -39,6 +42,21 @@ const photos = [
     width: 1920,
     height: 2560,
   },
+  {
+    src: ImageG7,
+    width: 2560,
+    height: 1920,
+  },
+  {
+    src: ImageG8,
+    width: 2560,
+    height: 1198,
+  },
+  {
+    src: ImageG9,
+    width: 2560,
+    height: 1442,
+  },
 ];
 
 export default function OurActivities() {
@@ -50,7 +68,13 @@ export default function OurActivities() {
           <h3>Our activities</h3>
         </div>
         <div className="gallery-content">
-          <Gallery images={photos} enableImageSelection={false} />
+          <div className="gallery-wrapper">
+            <Gallery
+              rowHeight={300}
+              images={photos}
+              enableImageSelection={false}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -22,8 +22,8 @@ export default function Classes() {
             <div className="classes-card-description">
               <h5>Drawing Class</h5>
               <p>
-                Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                Unleash Your Child’s Creativity! Join our drawing classes for
+                kids. Explore art, make friends, and ignite their imagination!
               </p>
             </div>
             <div className="classes-card-price">
@@ -53,10 +53,10 @@ export default function Classes() {
               }}
             />
             <div className="classes-card-description">
-              <h5>Drawing Class</h5>
+              <h5>Language Learning</h5>
               <p>
-                Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                Unlock Language Magic! Enroll your in our language learning
+                classes. Fun, interactive, and perfect for young minds!
               </p>
             </div>
             <div className="classes-card-price">
@@ -86,10 +86,11 @@ export default function Classes() {
               }}
             />
             <div className="classes-card-description">
-              <h5>Drawing Class</h5>
+              <h5>Basic Science</h5>
               <p>
-                Justo ea diam stet diam ipsum no sit, ipsum vero et et diam
-                ipsum duo et no et, ipsum ipsum erat duo amet clita duo
+                Explore Science Wonders! Enroll your in our basic science
+                classes. Fun experiments, curious minds, and endless discoveries
+                await!
               </p>
             </div>
             <div className="classes-card-price">
