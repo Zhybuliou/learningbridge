@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "gapi-script": "^1.2.0",
+    "html-react-parser": "^5.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-grid-gallery": "^1.0.1-alpha.0",
