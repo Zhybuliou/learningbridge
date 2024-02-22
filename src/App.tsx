@@ -13,7 +13,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<StartPage />} />
-      <Route path="/freehold" element={<HomePageLayout />} end>
+      <Route path="/freehold" element={<HomePageLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/freehold/curriculum" element={<CurriculumPage />} />
         <Route path="/freehold/about" element={<AboutPage />} />
