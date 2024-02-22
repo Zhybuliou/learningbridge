@@ -1,0 +1,24 @@
+.virtual-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+  }
+  .virtual-header h3 {
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3ea3db;
+    letter-spacing: -3px;
+  }
+  .virtual-header p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #faaf11;
+  }
