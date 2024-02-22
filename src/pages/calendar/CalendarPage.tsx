@@ -17,6 +17,9 @@ export default function CalendarPage() {
       gapi.client
         .init({
           apiKey,
+          discoveryDocs: [
+            'https://www.googleapis.com/discovery/v1/apis/translate/v2/rest',
+          ],
         })
         .then(function () {
           return gapi.client.request({
