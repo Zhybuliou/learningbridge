@@ -17,7 +17,7 @@ export default function VirtualPage() {
         <div className="virtual-content-info">
           <div className="who-content-card">
             <div className="who-content-content">
-              <h5>Dedicated classroom</h5>
+              <h5>Dedicated Classroom</h5>
               <p>
                 Learning Bridge Academy has a dedicated classroom for Virtual
                 Learners with a specialist who works with each student.
