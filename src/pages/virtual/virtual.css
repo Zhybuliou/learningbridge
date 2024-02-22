@@ -22,3 +22,73 @@
     font-style: normal;
     color: #faaf11;
   }
+  .virtual-content {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+  }
+
+  .virtual-content-image {
+    margin-right: 30px;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/blue-shape.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position-y: 50px;
+  }
+  .virtual-content-image img {
+    margin-top: 20px;
+  }
+  .virtual-content-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    max-width: 520px;
+    height: 240px;
+    padding: 10px;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 3px 6px,
+      rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+  }
+  .virtual-content-card img {
+    margin-right: 20px;
+  }
+  .virtual-content-card h5 {
+    font-family: 'Quicksand', sans-serif;
+    color: #3ea3db;
+    font-size: 18px;
+  }
+  .virtual-content-card p {
+    font-family: 'Quicksand', sans-serif;
+    color: #66717a;
+    font-size: 20px;
+  }
+  .virtual-content-info {
+    max-width: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-wrap: break-word;
+  }
+  
+  @media (max-width: 605px) {
+    .virtual-header h3 {
+      font-size: 40px;
+      line-height: 2.5rem;
+    }
+    .virtual-content-card {
+      height: 185px;
+    }
+    .virtual-content-image img {
+      margin-top: 0px;
+    }
+  }
+  
