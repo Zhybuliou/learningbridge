@@ -29,7 +29,6 @@ export default function CalendarPage() {
         .then(
           (response: any) => {
             const res = response.result.items;
-            console.log(res);
             setEvents(res);
           },
           function (err: any) {
@@ -49,7 +48,7 @@ export default function CalendarPage() {
       <PageTitle titleName="Calendar" />
       <div className="calendar-header">
         <p>2024</p>
-        <h3>February</h3>
+        <h3>Academic Year</h3>
       </div>
       <div className="calendar-cards">
         {events.length ? (
