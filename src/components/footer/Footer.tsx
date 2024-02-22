@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div className="footer-wrapper">
         <div className="footer-content">
-          © 2020 – <b> Learning Bridge. </b> All rights reserved.
+          © 2024 – <b> Learning Bridge. </b> All rights reserved.
         </div>
       </div>
     </footer>

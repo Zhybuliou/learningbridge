@@ -1,10 +1,6 @@
 import PageTitle from '../../components/page-title/PageTitle';
 import './virtual.css';
 import BoyBook from '../../assets/kid-who.png';
-import ImageTrophy from '../../assets/trophy.png';
-import ImageBoard from '../../assets/abc.png';
-import ImageBooks from '../../assets/books.png';
-import Imagecertificate from '../../assets/certificate.png';
 
 export default function VirtualPage() {
   return (
