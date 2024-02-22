@@ -1,32 +1,32 @@
 .gallery {
-    margin: 0 auto;
-    max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .gallery-header {
-    text-align: center;
-    line-height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
 }
-.gallery-header h3{
-    font-size: 50px;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #3EA3DB;
-    letter-spacing: -3px;
+.gallery-header h3 {
+  font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3ea3db;
+  letter-spacing: -3px;
 }
-.gallery-header p{
-    margin-top: 30px;
-    font-size: 40px;
-    font-family: "Sacramento", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #FAAF11;
+.gallery-header p {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #faaf11;
 }
-.gallery-content{
-    margin-top: 20px;
-    margin-bottom: 40px;
+.gallery-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-.gallery-wrapper{
-    margin: 0 auto;
-    max-width: 900px;
+.gallery-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
 }

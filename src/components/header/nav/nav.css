@@ -1,4 +1,3 @@
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -19,9 +18,8 @@
 }
 
 .nav-elements {
-    width: 100%;
+  width: 100%;
 }
-
 
 .nav-elements ul {
   display: flex;
@@ -35,43 +33,43 @@
 
 .nav-elements ul a {
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
   font-weight: 800;
   color: #000;
-  transition: all ease-in 0.1s
+  transition: all ease-in 0.1s;
 }
 .nav-elements ul .call-action {
-    margin-left: auto;
-  }
+  margin-left: auto;
+}
 
-.nav-elements ul .call-action a{
-    text-decoration: none;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 22px;
-    font-weight: 800;
-    color: #DD9933;
-    transition: all ease-in 0.1s;
-  }
-  .call-action a:hover{
-      color: #BC7D20;
-    }
-.call-action-text{
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #7F888F
+.nav-elements ul .call-action a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 800;
+  color: #dd9933;
+  transition: all ease-in 0.1s;
+}
+.call-action a:hover {
+  color: #bc7d20;
+}
+.call-action-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f888f;
 }
 
 .nav-elements ul a.active {
-    color: #BC7D20;
+  color: #bc7d20;
 }
 .nav-elements ul a:hover {
-    color: #BC7D20;
+  color: #bc7d20;
 }
 
 @media (max-width: 1100px) {
@@ -119,13 +117,13 @@
   }
 }
 .home-page-logo {
-    height: 80px;
-    width: 200px;
-    background-image: url('../../../assets/LOGO-small.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  height: 80px;
+  width: 200px;
+  background-image: url('../../../assets/LOGO-small.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.link-logo{
+.link-logo {
   display: block;
   z-index: 8;
 }

@@ -4,6 +4,7 @@ import parse from 'html-react-parser';
 import { useEffect, useState } from 'react';
 import PageTitle from '../../components/page-title/PageTitle';
 import './calendar.css';
+import CalendarDate from './CalendarDate';
 
 export default function CalendarPage() {
   const [events, setEvents] = useState([]);
@@ -39,25 +40,46 @@ export default function CalendarPage() {
     getEvents(myCalendarID, myApiKey);
     console.log(events);
   }, []);
+
   return (
     <>
       <PageTitle titleName="Calendar" />
+      <div className="calendar-header">
+        <p>2024</p>
+        <h3>February</h3>
+      </div>
       <div className="calendar-cards">
-        {events.map((el: any) => (
-          <div key={el.id} className="calendar-card">
-            <h2>{el.summary}</h2>
-            <div>{parse(`${el.description || 'Comming soon ...'}`)}</div>
-          </div>
-        ))}
+        {events.length ? (
+          events
+            .sort((a: any, b: any) => {
+              const dateA = new Date(a.start.dateTime) as any;
+              const dateB = new Date(b.start.dateTime) as any;
+              return dateA - dateB;
+            })
+            .map((el: any) => (
+              <div key={el.id} className="calendar-card">
+                {el.attachments ? (
+                  <div
+                    className="calendar-card-image"
+                    style={{
+                      backgroundImage: `url(${el.attachments[0].fileUrl.replace(
+                        'open?',
+                        'thumbnail?'
+                      )})`,
+                    }}
+                  />
+                ) : null}
+                <CalendarDate inputDateString={`${el.start.dateTime}`} />
+                <h2>{el.summary}</h2>
+                <div className="calendar-card-description">
+                  {parse(`${el.description || 'Comming soon ...'}`)}
+                </div>
+              </div>
+            ))
+        ) : (
+          <h2>Loading...</h2>
+        )}
       </div>
     </>
   );
 }
-
-// Project name
-// My Maps Project
-// Project number
-// 906173421905
-// Project ID
-// subtle-tooling-401016
-// API key AIzaSyAF9RB0SutUpFka9NhhXz5laUZ_17OXC8c
