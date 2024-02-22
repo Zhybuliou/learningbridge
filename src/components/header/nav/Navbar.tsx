@@ -20,9 +20,7 @@ export default function Navbar() {
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul onClick={() => setShowNavbar(false)} aria-hidden="true">
             <li>
-              <NavLink to="/freehold" end>
-                Home
-              </NavLink>
+              <NavLink to="/freehold">Home</NavLink>
             </li>
             <li>
               <NavLink to="/freehold/curriculum">Curriculum</NavLink>
