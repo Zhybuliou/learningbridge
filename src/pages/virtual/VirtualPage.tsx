@@ -15,8 +15,8 @@ export default function VirtualPage() {
           <img src={BoyBook} alt="boy" width="auto" height="300px" />
         </div>
         <div className="virtual-content-info">
-          <div className="who-content-card">
-            <div className="who-content-content">
+          <div className="virtual-content-card">
+            <div className="virtual-content-content">
               <h5>Dedicated Classroom</h5>
               <p>
                 Learning Bridge Academy has a dedicated classroom for Virtual
@@ -24,8 +24,8 @@ export default function VirtualPage() {
               </p>
             </div>
           </div>
-          <div className="who-content-card">
-            <div className="who-content-content">
+          <div className="virtual-content-card">
+            <div className="virtual-content-content">
               <h5>Access Capabilities</h5>
               <p>
                 Our class has remote access capabilities for parents to monitor
@@ -33,8 +33,8 @@ export default function VirtualPage() {
               </p>
             </div>
           </div>
-          <div className="who-content-card">
-            <div className="who-content-content">
+          <div className="virtual-content-card">
+            <div className="virtual-content-content">
               <h5>Social Distancing</h5>
               <p>
                 The classroom makes sure to follow the proper safety and social
@@ -42,8 +42,8 @@ export default function VirtualPage() {
               </p>
             </div>
           </div>
-          <div className="who-content-card">
-            <div className="who-content-content">
+          <div className="virtual-content-card">
+            <div className="virtual-content-content">
               <h5>Snacks</h5>
               <p>We also provide meals and snacks on site.</p>
             </div>
