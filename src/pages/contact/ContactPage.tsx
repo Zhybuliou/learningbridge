@@ -4,6 +4,7 @@ import ImageFreehold from '../../assets/gallery/g-9.jpg';
 import ImageEastBrunswick from '../../assets/gallery/g-8.jpg';
 import ImageComingSoon from '../../assets/gallery/g-11.jpg';
 import './contact.css';
+import ContactForm from './ContactForm';
 
 export default function ContactPage() {
   return (
@@ -27,7 +28,9 @@ export default function ContactPage() {
               aria-label="118 W Main Street, Freehold, NJ"
             />
           </div>
-          <div className="contact-form">Form</div>
+          <div className="contact-form">
+            <ContactForm />
+          </div>
         </div>
         <div className="contact-cards">
           <div className="contact-card">

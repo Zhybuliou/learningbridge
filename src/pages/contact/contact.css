@@ -25,13 +25,13 @@
 
   .contact-content{
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1200px;
   }
   .contact-map-block{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-    min-height: 300px;
+    min-height: 450px;
     border-radius: 10px;
     box-shadow:
     rgba(0, 0, 0, 0.16) 0px 3px 6px,
@@ -39,11 +39,11 @@
   background-color: #f8f9fa;
   }
   .contact-map {
-    width: 50%;
+    width: 65%;
     min-width: 300px;
   }
   .contact-form {
-    width: 50%;
+    width: 35%;
     min-width: 300px;
   }
   .contact-map iframe {
@@ -53,7 +53,7 @@
   }
 
   .contact-cards {
-    margin: 30px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -95,4 +95,66 @@
   .contact-card-info svg{
     font-size: 26px;
     margin-right: 10px;
+  }
+  .contact-form{
+    padding: 10px 20px 10px 20px;
+    height: 100%;
+  }
+
+  .form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #faaf11 !important;
+    font-size: 16px;
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .form-button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+  
+  .form-button:hover {
+    color: black;
+  }
+  
+  .form-button:hover span {
+    transform: translateY(0) scale(2);
+  }
+  
+  .form-button span:nth-child(1) {
+    --n: 1;
+  }
+  
+  .form-button span:nth-child(2) {
+    --n: 2;
+  }
+  
+  .form-button span:nth-child(3) {
+    --n: 3;
+  }
+  
+  .form-button span:nth-child(4) {
+    --n: 4;
   }
