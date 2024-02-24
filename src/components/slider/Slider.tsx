@@ -20,6 +20,7 @@ import Image7 from '../../assets/icon-paralax/rev_sliderkin7.png';
 import Image9 from '../../assets/icon-paralax/rev_sliderkin8.png';
 import Image10 from '../../assets/icon-paralax/rev_sliderkin9.png';
 import Image11 from '../../assets/icon-paralax/rev_sliderkin10.png';
+import FadeIn from '../animate/FadeIn';
 
 const ImageBG = [
   {
@@ -180,16 +181,18 @@ export default function SimpleSlider() {
                 </animated.div>
               );
             })}
-            <div className="main-page-slide-content">
-              <p>Play, learn and grow</p>
-              <h4>Creative kids world</h4>
-              <Link to="/freehold/curriculum">
-                Find Out More <span />
-                <span />
-                <span />
-                <span /> <FaRegArrowAltCircleRight />
-              </Link>
-            </div>
+            <FadeIn numberDelay={300}>
+              <div className="main-page-slide-content">
+                <p>Play, learn and grow</p>
+                <h4>Creative kids world</h4>
+                <Link to="/freehold/curriculum">
+                  Find Out More <span />
+                  <span />
+                  <span />
+                  <span /> <FaRegArrowAltCircleRight />
+                </Link>
+              </div>
+            </FadeIn>
             <div
               className="main-pages-slide-image"
               style={{

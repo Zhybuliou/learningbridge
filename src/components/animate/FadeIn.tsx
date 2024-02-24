@@ -17,6 +17,9 @@ function FadeIn({ children, numberDelay }: Props) {
       y: !inView ? 24 : 0,
       opacity: !inView ? 0 : 1,
     },
+    config: {
+      duration: 300,
+    },
   });
   return (
     <Waypoint onEnter={() => setInview(true)}>

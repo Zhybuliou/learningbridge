@@ -10,14 +10,14 @@ export default function Teachers() {
   return (
     <section>
       <div className="teachers">
-        <FadeIn numberDelay={500}>
+        <FadeIn numberDelay={200}>
           <div className="teachers-header">
             <p>Meet our staffs</p>
             <h3>Excellent teacher</h3>
           </div>
         </FadeIn>
         <div className="teachers-cards">
-          <FadeIn numberDelay={600}>
+          <FadeIn numberDelay={200}>
             <div className="teachers-card">
               <div
                 className="teachers-card-avatar"
@@ -39,7 +39,7 @@ export default function Teachers() {
               <p>Music Teacher</p>
             </div>
           </FadeIn>
-          <FadeIn numberDelay={700}>
+          <FadeIn numberDelay={300}>
             <div className="teachers-card">
               <div
                 className="teachers-card-avatar"
@@ -61,7 +61,7 @@ export default function Teachers() {
               <p>Language Teacher</p>
             </div>
           </FadeIn>
-          <FadeIn numberDelay={800}>
+          <FadeIn numberDelay={400}>
             <div className="teachers-card">
               <div
                 className="teachers-card-avatar"
@@ -83,7 +83,7 @@ export default function Teachers() {
               <p>Art Teacher</p>
             </div>
           </FadeIn>
-          <FadeIn numberDelay={900}>
+          <FadeIn numberDelay={500}>
             <div className="teachers-card">
               <div
                 className="teachers-card-avatar"

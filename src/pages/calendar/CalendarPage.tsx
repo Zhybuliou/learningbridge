@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import PageTitle from '../../components/page-title/PageTitle';
 import './calendar.css';
 import CalendarDate from './CalendarDate';
+import FadeIn from '../../components/animate/FadeIn';
 
 export default function CalendarPage() {
   const [events, setEvents] = useState([]);
@@ -46,10 +47,12 @@ export default function CalendarPage() {
   return (
     <>
       <PageTitle titleName="Calendar" />
-      <div className="calendar-header">
-        <p>2024</p>
-        <h3>Academic Year</h3>
-      </div>
+      <FadeIn numberDelay={300}>
+        <div className="calendar-header">
+          <p>2024</p>
+          <h3>Academic Year</h3>
+        </div>
+      </FadeIn>
       <div className="calendar-cards">
         {events.length ? (
           events
@@ -60,22 +63,26 @@ export default function CalendarPage() {
             })
             .map((el: any) => (
               <div key={el.id} className="calendar-card">
-                {el.attachments ? (
-                  <div
-                    className="calendar-card-image"
-                    style={{
-                      backgroundImage: `url(${el.attachments[0].fileUrl.replace(
-                        'open?',
-                        'thumbnail?'
-                      )})`,
-                    }}
-                  />
-                ) : null}
-                <CalendarDate inputDateString={`${el.start.dateTime}`} />
-                <h2>{el.summary}</h2>
-                <div className="calendar-card-description">
-                  {parse(`${el.description || 'Comming soon ...'}`)}
-                </div>
+                <FadeIn numberDelay={300}>
+                  {el.attachments ? (
+                    <div
+                      className="calendar-card-image"
+                      style={{
+                        backgroundImage: `url(${el.attachments[0].fileUrl.replace(
+                          'open?',
+                          'thumbnail?'
+                        )})`,
+                      }}
+                    />
+                  ) : (
+                    <div />
+                  )}
+                  <CalendarDate inputDateString={`${el.start.dateTime}`} />
+                  <h2>{el.summary}</h2>
+                  <div className="calendar-card-description">
+                    {parse(`${el.description || 'Comming soon ...'}`)}
+                  </div>
+                </FadeIn>
               </div>
             ))
         ) : (

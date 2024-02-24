@@ -22,7 +22,7 @@ export default function ContactForm() {
     validationSchema,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onSubmit: (values: any) => {
-      alert(JSON.stringify(values, null, 2));
+      console.log(JSON.stringify(values, null, 2));
     },
   });
 

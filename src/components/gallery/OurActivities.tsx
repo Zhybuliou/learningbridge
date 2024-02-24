@@ -10,6 +10,7 @@ import ImageG6 from '../../assets/gallery/g-6.jpg';
 import ImageG7 from '../../assets/gallery/g-7.jpg';
 import ImageG8 from '../../assets/gallery/g-8.jpg';
 import ImageG9 from '../../assets/gallery/g-9.jpg';
+import FadeIn from '../animate/FadeIn';
 
 const photos = [
   {
@@ -63,17 +64,21 @@ export default function OurActivities() {
   return (
     <section>
       <div className="gallery">
-        <div className="gallery-header">
-          <p>Gallery</p>
-          <h3>Our activities</h3>
-        </div>
+        <FadeIn numberDelay={200}>
+          <div className="gallery-header">
+            <p>Gallery</p>
+            <h3>Our activities</h3>
+          </div>
+        </FadeIn>
         <div className="gallery-content">
           <div className="gallery-wrapper">
-            <Gallery
-              rowHeight={300}
-              images={photos}
-              enableImageSelection={false}
-            />
+            <FadeIn numberDelay={400}>
+              <Gallery
+                rowHeight={300}
+                images={photos}
+                enableImageSelection={false}
+              />
+            </FadeIn>
           </div>
         </div>
       </div>
