@@ -7,6 +7,8 @@ const validationSchema = yup.object({
     .string()
     .email('Enter a valid email')
     .required('Email is required'),
+  name: yup.string().required('Name is required'),
+  phone: yup.string().required('Phone is required'),
 });
 
 export default function ContactForm() {
@@ -37,6 +39,7 @@ export default function ContactForm() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.name && Boolean(formik.errors.name)}
+          helperText={formik.touched.name && `${formik?.errors?.name}`}
         />
         <TextField
           fullWidth
@@ -49,6 +52,7 @@ export default function ContactForm() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.email && Boolean(formik.errors.email)}
+          helperText={formik.touched.email && `${formik?.errors?.email}`}
         />
         <TextField
           fullWidth
@@ -60,7 +64,8 @@ export default function ContactForm() {
           value={formik.values.password}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          error={formik.touched.password && Boolean(formik.errors.password)}
+          error={formik.touched.phone && Boolean(formik.errors.phone)}
+          helperText={formik.touched.phone && `${formik?.errors?.phone}`}
         />
         <TextField
           fullWidth
@@ -70,6 +75,9 @@ export default function ContactForm() {
           rows={6}
           variant="outlined"
           margin="normal"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.message && Boolean(formik.errors.message)}
         />
         <Button
           className="form-button"

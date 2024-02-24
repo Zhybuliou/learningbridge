@@ -55,13 +55,14 @@
   .contact-cards {
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
   }
   .contact-card {
     height: 440px;
-    width: 390px;
+    width: 380px;
+    margin: 10px;
     border-radius: 10px;
     box-shadow:
       rgba(0, 0, 0, 0.16) 0px 3px 6px,
@@ -87,6 +88,7 @@
   .contact-card-info{
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     color: #66717a;
@@ -97,7 +99,7 @@
     margin-right: 10px;
   }
   .contact-form{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 30px 20px;
     height: 100%;
   }
 
@@ -157,4 +159,38 @@
   
   .form-button span:nth-child(4) {
     --n: 4;
+  }
+
+  @media (max-width: 880px) {
+    .contact-map {
+      width: 100%;
+      min-width: 300px;
+      height: 300px;
+      margin: 10px;
+    }
+    .contact-form {
+      margin: 0 auto;
+      width: 90%;
+      min-width: 300px;
+    }
+    .contact-card {
+      height: auto;
+      width: 310px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow:
+        rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      background-color: #f8f9fa;
+    }
+    .contact-card-info{
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .contact-header h3 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 2.5rem;
+    }
   }
