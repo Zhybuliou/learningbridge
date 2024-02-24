@@ -94,4 +94,8 @@
   .who-content-image img {
     margin-top: 0px;
   }
+  .who-content-image {
+    margin-right: 0px;
+    width: 310px;
+  }
 }

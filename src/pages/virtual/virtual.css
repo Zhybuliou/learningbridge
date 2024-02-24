@@ -91,5 +91,9 @@
     .virtual-content-image img {
       margin-top: 0px;
     }
+    .virtual-content-image {
+      margin-right: 0px;
+      width: 310px;
+    }
   }
   
