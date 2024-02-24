@@ -1,0 +1,48 @@
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+  }
+  .contact-header h3 {
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #3ea3db;
+    letter-spacing: -3px;
+  }
+  .contact-header p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #faaf11;
+  }
+
+  .contact-content{
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  .contact-map-block{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: #ccc;
+    min-height: 300px;
+  }
+  .contact-map {
+    width: 50%;
+    min-width: 300px;
+  }
+  .contact-form {
+    width: 50%;
+    min-width: 300px;
+  }
+  /* .contact-map iframe {
+    width: 100%;
+    height: 100%;
+  } */
