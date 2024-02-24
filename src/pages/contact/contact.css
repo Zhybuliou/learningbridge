@@ -31,8 +31,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-    background-color: #ccc;
     min-height: 300px;
+    border-radius: 10px;
+    box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #f8f9fa;
   }
   .contact-map {
     width: 50%;
@@ -42,10 +46,11 @@
     width: 50%;
     min-width: 300px;
   }
-  /* .contact-map iframe {
+  .contact-map iframe {
+    border-radius: 10px 0px 0px 10px;
     width: 100%;
     height: 100%;
-  } */
+  }
 
   .contact-cards {
     margin: 30px auto;

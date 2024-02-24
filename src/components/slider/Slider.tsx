@@ -183,7 +183,7 @@ export default function SimpleSlider() {
             <div className="main-page-slide-content">
               <p>Play, learn and grow</p>
               <h4>Creative kids world</h4>
-              <Link to="/">
+              <Link to="/freehold/curriculum">
                 Find Out More <span />
                 <span />
                 <span />
@@ -231,7 +231,7 @@ export default function SimpleSlider() {
             <div className="main-page-slide-content">
               <p>Mindful curriculum</p>
               <h4>Fun & engaging learning</h4>
-              <Link to="/">
+              <Link to="/freehold/calendar">
                 Find Out More <span />
                 <span />
                 <span />
