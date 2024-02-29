@@ -7,6 +7,9 @@ import ImageClasses6 from '../../assets/classes/class-6.png';
 import FadeIn from '../animate/FadeIn';
 
 export default function Classes() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
   return (
     <section className="classes-wrapper">
       <div className="classes">
@@ -128,7 +131,7 @@ export default function Classes() {
             </p>
           </FadeIn>
           <FadeIn numberDelay={500}>
-            <Link to="/freehold/curriculum">
+            <Link to="/freehold/curriculum" onClick={() => scrollToTop()}>
               Find Out More <span />
               <span />
               <span />
