@@ -39,10 +39,10 @@ export default function StartPage() {
     <div className="start-page-main">
       <video
         id="bgVideo"
-        autoPlay
+        playsInline
         loop
+        autoPlay
         muted
-        preload="auto"
         style={{ position: 'fixed' }}
       >
         <source src={videoBg} type="video/mp4" />
