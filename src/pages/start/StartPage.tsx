@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { animated, useSpring } from '@react-spring/web';
 import videoBg from '../../assets/videoBg.mp4';
 import LogoCloud from '../../assets/LOGO-big.png';
-import Poster from '../../assets/cloud/poster.png';
 import './startPage.css';
 import AnimateWord from './AnimateWord';
 
@@ -37,15 +36,7 @@ export default function StartPage() {
   });
   return (
     <div className="start-page-main">
-      <video
-        id="bgVideo"
-        src={videoBg}
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={Poster}
-      />
+      <video id="bgVideo" src={videoBg} autoPlay loop muted playsInline />
       <div className="start-page-content">
         <animated.div style={styleLogo}>
           <img src={LogoCloud} alt="Cloud Logo" width="250px" height="100%" />
